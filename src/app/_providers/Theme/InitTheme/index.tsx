@@ -7,7 +7,8 @@ export const InitTheme: React.FC = () => {
     // eslint-disable-next-line @next/next/no-before-interactive-script-outside-document
     <Script
       id="theme-script"
-      strategy="beforeInteractive"
+      // comment out the line below to avoid unhandled runtime error: ChunkLoadError
+      // strategy="beforeInteractive"
       dangerouslySetInnerHTML={{
         __html: `
   (function () {
